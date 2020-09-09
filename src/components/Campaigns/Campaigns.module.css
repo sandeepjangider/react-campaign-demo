@@ -1,0 +1,12 @@
+.Campaigns {
+    padding: 15px;
+}
+.AddCampaign {
+    padding: 25px;
+}
+.Link {
+    cursor: pointer;
+}
+.Link:hover {
+    color: blue;
+}
