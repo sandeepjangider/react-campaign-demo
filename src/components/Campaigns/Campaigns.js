@@ -188,7 +188,12 @@ class Campaigns extends Component {
         const currentCampaigns = this.state.campaigns.slice(indexOfFirstCampaign, indexOfLastCampaign);
 
         //  Change Page
-        const paginate = (pageNumber) => (this.setState({currentPage: pageNumber}));
+        const paginate = (event, pageNumber) => {
+
+            event.preventDefault();
+            this.setState({currentPage: pageNumber});
+            
+        } 
 
         const campaignList = currentCampaigns.map((cmp) => {
             let pauseResumeBtn;
